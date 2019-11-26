@@ -1,1 +1,118 @@
-<p>filters works!</p>
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="input-group">
+          <div class="form-control"></div>
+          <div class="input-group-append">
+            <button type="button" class="btn">
+              <app-icon-calendar></app-icon-calendar>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-toolbar">
+          <button type="button" class="btn">1H</button>
+          <button type="button" class="btn">1D</button>
+          <button type="button" class="btn">1W</button>
+          <button type="button" class="btn">1M</button>
+          <button type="button" class="btn" disabled>·</button>
+          <button type="button" class="btn">MTD</button>
+          <button type="button" class="btn">QTD</button>
+          <button type="button" class="btn">YTD</button>
+          <button type="button" class="btn" disabled>·</button>
+          <button type="button" class="btn">ALL</button>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button type="button" class="btn">
+          <app-icon-filter></app-icon-filter>
+        </button>
+        <button type="button" class="btn">
+          <app-icon-share></app-icon-share>
+        </button>
+        <button type="button" class="btn">
+          <app-icon-export></app-icon-export>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-3">
+        <dl>
+          <dt>Project Status</dt>
+          <dd>
+            <div *ngFor="let item of statusList" class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                {{item}}
+              </label>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-3">
+        <dl>
+          <dt>Team Member</dt>
+          <dd>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" [indeterminate]="true" value="">
+                All
+              </label>
+            </div>
+
+            <div *ngFor="let item of teamMembers" class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                {{item}}
+              </label>
+            </div>
+            <p>
+              <a href="#">Show all...</a>
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-3">
+        <dl>
+          <dt>
+            Visibility
+          </dt>
+          <dd>
+            <div *ngFor="let item of visibilities" class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" value="">
+                {{item}}
+              </label>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-3">
+        <dl>
+          <dt>Clients</dt>
+          <dd>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" [indeterminate]="true" value="">
+                All
+              </label>
+            </div>
+            <div *ngFor="let item of clients" class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                {{item}}
+              </label>
+            </div>
+            <p>
+              <a href="#">Show all...</a>
+            </p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,5 @@
-<p>project-list works!</p>
+<div class="row">
+  <div *ngFor="let item of items" class="col-md-4">
+    <app-project-item [item]="item"></app-project-item>
+  </div>
+</div>
