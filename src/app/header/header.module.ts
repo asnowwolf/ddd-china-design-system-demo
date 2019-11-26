@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../shared/shared.module';
 import { BrandComponent } from './brand/brand.component';
 import { HeaderComponent } from './header.component';
 import { MajorNavComponent } from './major-nav/major-nav.component';
@@ -22,6 +23,7 @@ import { SettingsComponent } from './minor-nav/settings/settings.component';
   ],
   imports: [
     CommonModule,
+    SharedModule,
   ],
   exports: [
     HeaderComponent,
