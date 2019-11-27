@@ -1,14 +1,16 @@
 <div class="card">
   <div class="card-body">
-    <a *ngFor="let item of items" [href]="item.url">
+    <a *ngFor="let item of items" [href]="item.url" class="text-body">
       <div class="media">
-        <img [src]="item.avatarUrl" class="mr-3" alt="avatar">
+        <img [src]="item.avatarUrl" class="avatar" alt="avatar">
         <div class="media-body">
-          <h5 class="mt-0">{{item.name}}</h5>
-          <p><small>{{item.email}}</small></p>
+          <h5 class="mb-1 ">{{item.name}}</h5>
+          <p class="email ">{{item.email}}</p>
         </div>
       </div>
     </a>
-    <a href="#">View all...</a>
+    <div>
+      <a href="#">View all...</a>
+    </div>
   </div>
 </div>

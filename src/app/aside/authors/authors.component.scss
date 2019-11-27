@@ -4,6 +4,19 @@
   display: block;
 }
 
-small {
+img.avatar {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: 50%;
+  margin-right: $spacer;
+}
+
+.media-body {
+  flex: auto;
+}
+
+.email {
+  opacity: 0.25;
   font-size: $font-size-sm;
 }
