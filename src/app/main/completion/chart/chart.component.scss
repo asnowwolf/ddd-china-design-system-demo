@@ -1,3 +1,17 @@
+@import "common";
+
 :host {
   display: block;
+}
+
+svg {
+  width: 100%;
+}
+
+.previous {
+  fill: $secondary;
+}
+
+.current {
+  fill: $primary;
 }
