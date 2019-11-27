@@ -6,4 +6,14 @@ $success: #00D3A7;
 $warning: #FFC000;
 $danger: #FF0048;
 $link-color: $active;
+
+$font-family-sans-serif: 'PingFang SC, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
+$header-font-size: 24px;
+$title-font-size: 20px;
+$body-font-size: 14px;
+$h2-font-size: $header-font-size;
+$h3-font-size: $title-font-size;
+$h4-font-size: $title-font-size;
+$h5-font-size: $body-font-size;
+
 @import "~bootstrap/scss/variables";
