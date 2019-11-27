@@ -18,12 +18,15 @@ $h3-font-size: $title-font-size;
 $h4-font-size: $title-font-size;
 $h5-font-size: $body-font-size;
 
-$spacer: 8px;
+$size-unit: 8px;
+$spacer: $size-unit;
 $spacer-base: $spacer;
 $spacer-md: $spacer * 2;
 $spacer-lg: $spacer * 3;
 
 $navbar-nav-link-padding-x: $spacer-md;
 $navbar-dark-color: rgba(white, 0.9);
+
+$card-border-radius: $size-unit;
 
 @import "~bootstrap/scss/variables";
