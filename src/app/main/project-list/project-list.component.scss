@@ -1,0 +1,9 @@
+@import "common";
+
+:host {
+  display: block;
+}
+
+app-project-item {
+  margin-bottom: $spacer-lg;
+}

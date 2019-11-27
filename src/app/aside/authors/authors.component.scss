@@ -1,5 +1,9 @@
 @import "common";
 
+:host {
+  display: block;
+}
+
 small {
   font-size: $font-size-sm;
 }

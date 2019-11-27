@@ -1,3 +1,9 @@
+@import "common";
+
 :host {
   display: block;
+
+  > * {
+    margin-bottom: $spacer-lg;
+  }
 }

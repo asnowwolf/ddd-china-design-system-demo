@@ -17,4 +17,8 @@ $h3-font-size: $title-font-size;
 $h4-font-size: $title-font-size;
 $h5-font-size: $body-font-size;
 
+$spacer: 8px;
+$spacer-base: $spacer;
+$spacer-lg: $spacer * 3;
+
 @import "~bootstrap/scss/variables";
