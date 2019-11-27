@@ -1,3 +1,21 @@
+@import "common";
+
 :host {
   display: block;
+}
+
+.card {
+  text-align: center;
+}
+
+.text-primary {
+  font-size: $font-size-lg;
+}
+
+p.text-primary {
+  margin-bottom: $spacer-sm;
+}
+
+p.text-muted {
+  margin-bottom: 0;
 }

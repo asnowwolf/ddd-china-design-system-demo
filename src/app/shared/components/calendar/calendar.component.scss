@@ -1,0 +1,12 @@
+@import "common";
+
+:host {
+  display: flex;
+  border: 1px solid $input-border-color;
+  border-radius: $input-border-radius;
+  padding: $spacer-sm $spacer-base;
+}
+
+input {
+  border: none;
+}
