@@ -7,6 +7,7 @@ $warning: #FFC000;
 $danger: #FF0048;
 $link-color: $active;
 $dark: #172E5D;
+$text-muted: rgba(black, 0.5);
 
 $font-family-sans-serif: 'PingFang SC, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
 $header-font-size: 24px;
@@ -20,6 +21,7 @@ $h5-font-size: $body-font-size;
 
 $size-unit: 8px;
 $spacer: $size-unit;
+$spacer-sm: $spacer / 2;
 $spacer-base: $spacer;
 $spacer-md: $spacer * 2;
 $spacer-lg: $spacer * 3;

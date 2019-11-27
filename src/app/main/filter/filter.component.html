@@ -1,32 +1,25 @@
 <div class="card">
   <div class="card-header">
-    <div class="row">
-      <div class="col-md-2">
-        <div class="input-group">
-          <div class="form-control"></div>
-          <div class="input-group-append">
-            <button type="button" class="btn">
-              <app-icon-calendar></app-icon-calendar>
-            </button>
-          </div>
-        </div>
+    <div class="row align-items-center">
+      <div class="col-auto">
+        <app-calendar value="12/01/17 - 12/25/17"></app-calendar>
       </div>
       <div class="col">
         <div class="btn-toolbar">
-          <button type="button" class="btn">1H</button>
-          <button type="button" class="btn">1D</button>
-          <button type="button" class="btn">1W</button>
-          <button type="button" class="btn">1M</button>
-          <button type="button" class="btn" disabled>·</button>
-          <button type="button" class="btn">MTD</button>
-          <button type="button" class="btn">QTD</button>
-          <button type="button" class="btn">YTD</button>
-          <button type="button" class="btn" disabled>·</button>
-          <button type="button" class="btn">ALL</button>
+          <button type="button" class="btn btn-sm active">1H</button>
+          <button type="button" class="btn btn-sm">1D</button>
+          <button type="button" class="btn btn-sm">1W</button>
+          <button type="button" class="btn btn-sm">1M</button>
+          <button type="button" class="btn btn-sm" disabled>·</button>
+          <button type="button" class="btn btn-sm">MTD</button>
+          <button type="button" class="btn btn-sm">QTD</button>
+          <button type="button" class="btn btn-sm">YTD</button>
+          <button type="button" class="btn btn-sm" disabled>·</button>
+          <button type="button" class="btn btn-sm">ALL</button>
         </div>
       </div>
-      <div class="col-auto">
-        <button type="button" class="btn">
+      <div class="col-auto operations">
+        <button type="button" class="btn active">
           <app-icon-filter></app-icon-filter>
         </button>
         <button type="button" class="btn">
@@ -44,8 +37,8 @@
         <dl>
           <dt>Project Status</dt>
           <dd>
-        <div *ngFor="let item of statusList">
-          <app-checkbox [label]="item"></app-checkbox>
+            <div *ngFor="let item of statusList">
+              <app-checkbox [label]="item"></app-checkbox>
             </div>
           </dd>
         </dl>
@@ -56,12 +49,12 @@
           <dd>
             <app-checkbox label="All" [indeterminate]="true"></app-checkbox>
 
-        <div *ngFor="let item of teamMembers">
-          <app-checkbox [label]="item"></app-checkbox>
+            <div *ngFor="let item of teamMembers">
+              <app-checkbox [label]="item"></app-checkbox>
             </div>
-            <p>
+            <div>
               <a href="#">Show all...</a>
-            </p>
+            </div>
           </dd>
         </dl>
       </div>
@@ -71,8 +64,8 @@
             Visibility
           </dt>
           <dd>
-        <div *ngFor="let item of visibilities">
-          <app-radio [label]="item"></app-radio>
+            <div *ngFor="let item of visibilities">
+              <app-radio [label]="item"></app-radio>
             </div>
           </dd>
         </dl>
@@ -82,12 +75,12 @@
           <dt>Clients</dt>
           <dd>
             <app-checkbox label="All" [indeterminate]="true"></app-checkbox>
-        <div *ngFor="let item of clients">
+            <div *ngFor="let item of clients">
               <app-checkbox [label]="item"></app-checkbox>
             </div>
-            <p>
+            <div>
               <a href="#">Show all...</a>
-            </p>
+            </div>
           </dd>
         </dl>
       </div>

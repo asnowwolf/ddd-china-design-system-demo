@@ -1,3 +1,40 @@
+@import "common";
+
 :host {
   display: block;
+}
+
+.btn-toolbar {
+  .btn {
+    opacity: 0.25;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+.operations {
+  .btn {
+    opacity: 0.25;
+
+    &.active {
+      color: $active;
+      opacity: 1;
+    }
+  }
+}
+
+dl {
+  margin-bottom: 0;
+
+  dt {
+    color: $text-muted;
+    font-weight: normal;
+    margin-bottom: $spacer;
+  }
+
+  dd {
+    margin-bottom: 0;
+  }
 }
