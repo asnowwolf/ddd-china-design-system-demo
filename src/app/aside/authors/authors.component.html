@@ -1,16 +1,14 @@
 <div class="card">
   <div class="card-body">
-    <div class="list-group">
-      <a *ngFor="let item of items" class="list-group-item" [href]="item.url">
-        <div class="media">
-          <img [src]="item.avatarUrl" class="mr-3" alt="avatar">
-          <div class="media-body">
-            <h5 class="mt-0">{{item.name}}</h5>
-            <p>{{item.email}}</p>
-          </div>
+    <a *ngFor="let item of items" [href]="item.url">
+      <div class="media">
+        <img [src]="item.avatarUrl" class="mr-3" alt="avatar">
+        <div class="media-body">
+          <h5 class="mt-0">{{item.name}}</h5>
+          <p><small>{{item.email}}</small></p>
         </div>
-      </a>
-    </div>
-    <button type="button" class="btn btn-link">View all...</button>
+      </div>
+    </a>
+    <a href="#">View all...</a>
   </div>
 </div>
