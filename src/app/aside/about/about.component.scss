@@ -1,3 +1,38 @@
+@import "common";
+
 :host {
   display: block;
+  text-align: center;
+}
+
+.card-body {
+  padding-left: $spacer;
+  padding-right: $spacer;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  background: $primary;
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+  padding: 10px;
+
+  app-icon-logo {
+    display: block;
+    width: 100%;
+  }
+}
+
+.toolbar {
+  .btn {
+    width: 96px;
+
+    &:not(:last-child) {
+      margin-right: $spacer-md;
+    }
+  }
 }
