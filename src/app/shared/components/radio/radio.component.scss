@@ -1,0 +1,18 @@
+@import "common";
+
+svg {
+  user-select: none;
+  vertical-align: text-bottom;
+}
+
+svg:hover {
+  color: $active;
+}
+
+.checked {
+  svg {
+    color: $active;
+  }
+}
+
+

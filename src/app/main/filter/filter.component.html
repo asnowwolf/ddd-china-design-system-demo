@@ -44,11 +44,8 @@
         <dl>
           <dt>Project Status</dt>
           <dd>
-            <div *ngFor="let item of statusList" class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">
-                {{item}}
-              </label>
+        <div *ngFor="let item of statusList">
+          <app-checkbox [label]="item"></app-checkbox>
             </div>
           </dd>
         </dl>
@@ -57,18 +54,10 @@
         <dl>
           <dt>Team Member</dt>
           <dd>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" [indeterminate]="true" value="">
-                All
-              </label>
-            </div>
+            <app-checkbox label="All" [indeterminate]="true"></app-checkbox>
 
-            <div *ngFor="let item of teamMembers" class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">
-                {{item}}
-              </label>
+        <div *ngFor="let item of teamMembers">
+          <app-checkbox [label]="item"></app-checkbox>
             </div>
             <p>
               <a href="#">Show all...</a>
@@ -82,11 +71,8 @@
             Visibility
           </dt>
           <dd>
-            <div *ngFor="let item of visibilities" class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" value="">
-                {{item}}
-              </label>
+        <div *ngFor="let item of visibilities">
+          <app-radio [label]="item"></app-radio>
             </div>
           </dd>
         </dl>
@@ -95,17 +81,9 @@
         <dl>
           <dt>Clients</dt>
           <dd>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" [indeterminate]="true" value="">
-                All
-              </label>
-            </div>
-            <div *ngFor="let item of clients" class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">
-                {{item}}
-              </label>
+            <app-checkbox label="All" [indeterminate]="true"></app-checkbox>
+        <div *ngFor="let item of clients">
+              <app-checkbox [label]="item"></app-checkbox>
             </div>
             <p>
               <a href="#">Show all...</a>

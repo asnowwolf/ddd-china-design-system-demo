@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { RadioComponent } from './components/radio/radio.component';
 import { IconCalendarComponent } from './icon-calendar/icon-calendar.component';
 import { IconExportComponent } from './icon-export/icon-export.component';
 import { IconFilterComponent } from './icon-filter/icon-filter.component';
@@ -18,6 +20,8 @@ import { IconShareComponent } from './icon-share/icon-share.component';
     IconExportComponent,
     IconCalendarComponent,
     IconMoreComponent,
+    CheckboxComponent,
+    RadioComponent,
   ],
   imports: [
     CommonModule,
@@ -30,6 +34,8 @@ import { IconShareComponent } from './icon-share/icon-share.component';
     IconExportComponent,
     IconCalendarComponent,
     IconMoreComponent,
+    CheckboxComponent,
+    RadioComponent,
   ],
 })
 export class SharedModule {

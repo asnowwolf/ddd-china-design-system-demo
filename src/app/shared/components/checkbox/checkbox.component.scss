@@ -1,0 +1,46 @@
+@import "common";
+
+svg {
+  user-select: none;
+  vertical-align: text-bottom;
+
+  .mid-line {
+    stroke: $white;
+  }
+
+  .check-mark {
+    fill: $white;
+  }
+
+  .box {
+    stroke: currentColor;
+    fill: currentColor;
+  }
+}
+
+svg:hover {
+  color: $active;
+}
+
+.unchecked {
+  svg {
+    .box {
+      fill: none;
+    }
+  }
+}
+
+.checked, .indeterminate {
+  svg {
+    .box {
+      fill: $active;
+      stroke: $active;
+    }
+  }
+}
+
+.indeterminate {
+  svg {
+    opacity: 0.5;
+  }
+}
